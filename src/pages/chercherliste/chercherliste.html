@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="listee">
+      <ion-segment-button value="Feuille">
+        Feuille
+      </ion-segment-button>
+      <ion-segment-button value="Objet">
+        Objet
+      </ion-segment-button>
+
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="listee">
+    <ion-list *ngSwitchCase="'Feuille'">
+		test
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Objet'">
+
+
+Objet
+
+
+    </ion-list>
+
+
+  </div>
+</ion-content>
